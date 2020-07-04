@@ -1,0 +1,66 @@
+.contact {
+  background-color: var(--softBlue);
+  text-align: center;
+  padding: 4.2em 0 3.8em;
+  .p,
+  .h3-2 {
+    color: white;
+  }
+  .p {
+    font-size: 0.8em;
+    letter-spacing: 0.3em;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+  }
+  .h3-2 {
+    font-size: 1.4em;
+    line-height: 1.8rem;
+    margin-bottom: 1.9rem;
+  }
+  form {
+    position: relative;
+    input {
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+      color: var(--veryDarkBlue);
+      display: block;
+      font-size: 0.9em;
+      margin-bottom: 1.2em;
+      outline: none;
+      padding: 1.05em;
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      &::placeholder {
+        color: var(--lightGray);
+      }
+      &:invalid {
+        background: url("/src/images/icon-error.svg") center right 16px
+          no-repeat;
+        background-color: white;
+        border: 2px solid var(--softRed);
+        + div {
+          display: block;
+        }
+      }
+      + div {
+        align-items: flex-end;
+        background-color: var(--softRed);
+        border-radius: 5px;
+        color: white;
+        display: none;
+        font-style: italic;
+        font-size: 0.8em;
+        margin-bottom: -1em;
+        padding: 1rem 0.5rem 0.4em;
+        position: relative;
+        text-align: left;
+        top: -2.3em;
+      }
+    }
+    .button {
+      width: 100%;
+    }
+  }
+}

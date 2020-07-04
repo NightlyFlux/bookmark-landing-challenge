@@ -1,0 +1,103 @@
+@import "_header";
+@import "_hero";
+@import "_features";
+@import "_download";
+@import "_faq";
+@import "_contact";
+@import "_footer";
+@import "_attribution";
+
+:root {
+  // Primary
+  --softBlue: hsl(231, 69%, 60%);
+  --softRed: hsl(0, 94%, 66%);
+  // Neutral
+  --lightGray: hsl(240, 14%, 89%);
+  --grayishBlue: hsl(229, 8%, 60%);
+  --veryDarkBlue: hsl(229, 31%, 21%);
+}
+
+* {
+  color: var(--veryDarkBlue);
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  display: none;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 5px 10px -8px var(--softBlue);
+  font-weight: 500;
+  outline: none;
+  padding: 1rem 1.3rem;
+  &__blue {
+    @extend .button;
+    background-color: var(--softBlue);
+  }
+  &__red {
+    @extend .button;
+    background-color: var(--softRed);
+  }
+  &__white {
+    @extend .button;
+    background-color: #f7f7f7;
+    color: var(--veryDarkBlue);
+    margin-left: 0.9em;
+  }
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 2em;
+  height: inherit;
+}
+
+.h1 {
+  font-size: 1.9em;
+  font-weight: 500;
+  line-height: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.h2 {
+  @extend .h1;
+  font-size: 1.5em;
+  margin-bottom: 0.5rem;
+}
+
+.h3 {
+  @extend .h1;
+  font-size: 1.3em;
+  margin-bottom: 0.1rem;
+}
+
+.h3-2 {
+  @extend .h1;
+  font-size: 1.5em;
+  line-height: 1.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.p {
+  color: var(--grayishBlue);
+  font-size: 1em;
+  line-height: 1.5rem;
+  margin-bottom: 2.1rem;
+}
+
+.p-2 {
+  @extend .p;
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,25 @@
+.download {
+  margin: 9.3em 0 4.4em;
+  text-align: center;
+  .cards {
+    padding: 1em;
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 10px 25px -20px var(--softBlue);
+      margin: auto;
+      margin-bottom: 3em;
+      max-width: 280px;
+      padding: 1em;
+      &__image {
+        margin-bottom: 1.4em;
+      }
+      &__separator {
+        margin: 1em -1em;
+      }
+      .button {
+        margin-bottom: 1em;
+        width: 100%;
+      }
+    }
+  }
+}

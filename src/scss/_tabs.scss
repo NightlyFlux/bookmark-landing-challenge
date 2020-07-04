@@ -1,0 +1,81 @@
+@mixin tabIndicator {
+  background-color: var(--softRed);
+  bottom: 0;
+  content: "";
+  display: none;
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 143px;
+}
+
+.tabs {
+  li {
+    border-top: 1px solid var(--lightGray);
+    position: relative;
+    &::after {
+      @include tabIndicator;
+    }
+    &:last-child {
+      border-bottom: 1px solid var(--lightGray);
+    }
+    label {
+      display: block;
+      padding: 1.2em 0;
+    }
+  }
+  &__grid {
+    margin-top: 4.5em;
+  }
+  &__content {
+    display: none;
+    .button {
+      display: none;
+    }
+    &__image {
+      padding-bottom: 4.5em;
+      position: relative;
+      &::before {
+        background: url("/src/images/bg-desktop-mobile.png") bottom 2.5em right
+          no-repeat;
+        content: "";
+        left: 0;
+        margin: 0 -2em;
+        height: 100%;
+        position: absolute;
+        transform: scaleX(-1);
+        width: 100%;
+        z-index: -1;
+      }
+      img {
+        max-height: 200px;
+        max-width: 100%;
+      }
+    }
+  }
+  input[id="bookmarking"]:checked {
+    ~ ul li:nth-child(1)::after {
+      display: block;
+    }
+    ~ .tabs__grid #tab__bookmarking {
+      display: block;
+    }
+  }
+  input[id="searching"]:checked {
+    ~ ul li:nth-child(2)::after {
+      display: block;
+    }
+    ~ .tabs__grid #tab__searching {
+      display: block;
+    }
+  }
+  input[id="sharing"]:checked {
+    ~ ul li:nth-child(3)::after {
+      display: block;
+    }
+    ~ .tabs__grid #tab__sharing {
+      display: block;
+    }
+  }
+}

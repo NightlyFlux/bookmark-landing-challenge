@@ -1,0 +1,82 @@
+.faq {
+  margin-bottom: 7.7em;
+  text-align: center;
+  #openE1:checked {
+    ~ .expander {
+      [for="openE1"] {
+        background: url("/src/images/icon-arrow-close.svg") right center
+          no-repeat;
+      }
+      #E1 {
+        max-height: 500px;
+      }
+    }
+  }
+  #openE2:checked {
+    ~ .expander {
+      [for="openE2"] {
+        background: url("/src/images/icon-arrow-close.svg") right center
+          no-repeat;
+      }
+      #E2 {
+        max-height: 500px;
+      }
+    }
+  }
+  #openE3:checked {
+    ~ .expander {
+      [for="openE3"] {
+        background: url("/src/images/icon-arrow-close.svg") right center
+          no-repeat;
+      }
+      #E3 {
+        max-height: 500px;
+      }
+    }
+  }
+  #openE4:checked {
+    ~ .expander {
+      [for="openE4"] {
+        background: url("/src/images/icon-arrow-close.svg") right center
+          no-repeat;
+      }
+      #E4 {
+        max-height: 500px;
+      }
+    }
+  }
+  .expanders {
+    margin-top: 2.5em;
+    .expander {
+      border-bottom: 1px solid var(--lightGray);
+      &__header {
+        background: url("/src/images/icon-arrow.svg") right center no-repeat;
+        display: block;
+        padding: 1em 0;
+        transition: background 0.5s ease-in-out;
+        .p-2 {
+          color: var(--veryDarkBlue);
+          font-weight: 500;
+          margin-bottom: 0;
+          text-align: left;
+        }
+      }
+      &__content {
+        max-height: 0;
+        overflow-y: hidden;
+        transition: max-height 0.2s ease-out;
+        p {
+          color: var(--veryDarkBlue);
+          font-size: 0.935em;
+          line-height: 2em;
+          margin-bottom: 0;
+          text-align: left;
+          padding: 1.6em 0;
+        }
+      }
+    }
+  }
+  button {
+    margin-top: 3rem;
+  }
+}

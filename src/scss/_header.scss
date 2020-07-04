@@ -1,0 +1,23 @@
+@import "_menu";
+
+.header {
+  background: white;
+  height: 104px;
+  position: sticky;
+  top: 0;
+  transition: background 0.2s;
+  width: 100%;
+  z-index: 3;
+  &__logo {
+    background: url("/src/images/logo-bookmark.svg");
+    display: inline-flex;
+    height: 25px;
+    width: 148px;
+  }
+  &__content {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,15 @@
+.hero {
+  text-align: center;
+  &__image {
+    background: url("/src/images/bg-desktop-mobile.png") bottom right no-repeat;
+    padding: 2.3em 0 2em;
+    margin: 0 -2em;
+    img {
+      max-height: 300px;
+      max-width: 100%;
+    }
+  }
+  &__info {
+    padding: 3em 0;
+  }
+}

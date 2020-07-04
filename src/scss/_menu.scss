@@ -1,0 +1,74 @@
+.menu {
+  background: rgba(37, 43, 70, 0.9);
+  display: none;
+  height: calc(100vh - 104px);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  transition: background 0.2s;
+  ul {
+    li {
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      a {
+        color: white;
+        display: block;
+        font-size: 18px;
+        letter-spacing: 3px;
+        padding: 1em;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      &:last-child {
+        a {
+          border: 2px solid white;
+          border-radius: 5px;
+          margin-top: 1.5rem;
+          padding: 0.7rem 1rem;
+        }
+      }
+    }
+  }
+  &__toggler {
+    &:checked {
+      ~ .header {
+        background: rgba(37, 43, 70, 0.9);
+        .header__logo {
+          background: url("/src/images/logo-bookmark-white.svg");
+        }
+        .menu__hamburger {
+          background: url("/src/images/icon-close.svg") no-repeat;
+        }
+        .menu {
+          display: block;
+        }
+      }
+    }
+  }
+  &__hamburger {
+    background: url("/src/images/icon-hamburger.svg") no-repeat;
+    cursor: pointer;
+    display: inline-flex;
+    height: 18px;
+    user-select: none;
+    width: 18px;
+  }
+  &__social {
+    bottom: 2.5em;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    a {
+      height: 24px;
+      &:first-child {
+        margin-right: 2.5em;
+      }
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--veryDarkBlue);
+  padding: 2.7em 0;
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__links {
+    margin: 2em 0;
+    li {
+      color: white;
+      display: block;
+      font-size: 0.9em;
+      letter-spacing: 3px;
+      padding: 1em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    a:first-child {
+      margin-right: 2.5em;
+    }
+  }
+}
