@@ -6,6 +6,9 @@
       [for="openE1"] {
         background: url("/src/images/icon-arrow-close.svg") right center
           no-repeat;
+        @media screen and (min-width: 1024px) {
+          background-position: right 1.5em center;
+        }
       }
       #E1 {
         max-height: 500px;
@@ -17,6 +20,9 @@
       [for="openE2"] {
         background: url("/src/images/icon-arrow-close.svg") right center
           no-repeat;
+        @media screen and (min-width: 1024px) {
+          background-position: right 1.5em center;
+        }
       }
       #E2 {
         max-height: 500px;
@@ -28,6 +34,9 @@
       [for="openE3"] {
         background: url("/src/images/icon-arrow-close.svg") right center
           no-repeat;
+        @media screen and (min-width: 1024px) {
+          background-position: right 1.5em center;
+        }
       }
       #E3 {
         max-height: 500px;
@@ -39,6 +48,9 @@
       [for="openE4"] {
         background: url("/src/images/icon-arrow-close.svg") right center
           no-repeat;
+        @media screen and (min-width: 1024px) {
+          background-position: right 1.5em center;
+        }
       }
       #E4 {
         max-height: 500px;
@@ -64,7 +76,7 @@
       &__content {
         max-height: 0;
         overflow-y: hidden;
-        transition: max-height 0.2s ease-out;
+        transition: max-height 0.2s ease-in-out;
         p {
           color: var(--veryDarkBlue);
           font-size: 0.935em;
@@ -78,5 +90,41 @@
   }
   button {
     margin-top: 3rem;
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 10em 0 9.5em;
+    .h3-2 {
+      font-size: 2em;
+      margin-bottom: 1.8rem;
+    }
+    .p-2 {
+      font-size: 1.125em;
+      line-height: 1.5em;
+      margin: auto;
+      margin-bottom: 1rem;
+      width: 45%;
+    }
+    .expanders {
+      margin: auto;
+      margin-top: 3.5em;
+      width: 540px;
+      .expander {
+        border-top: 1px solid var(--lightGray);
+        border-bottom: none;
+        &__header {
+          background-position: right 1.5em center;
+          padding: 1.2em 0;
+          .p-2 {
+            font-weight: 400;
+            text-align: left;
+            width: 100%;
+          }
+        }
+      }
+    }
+    button {
+      font-size: 0.9em;
+      padding: 1rem 1.5rem;
+    }
   }
 }

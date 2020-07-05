@@ -57,10 +57,13 @@ input {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1092px;
   margin: auto;
-  padding: 0 2em;
   height: inherit;
+  padding: 0 2em;
+  @media screen and (min-width: 1140px) {
+    padding: 0;
+  }
 }
 
 .h1 {

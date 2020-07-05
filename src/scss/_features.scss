@@ -3,8 +3,22 @@
 .features {
   margin: 6.2em 0;
   text-align: center;
-  .p {
+  > .p {
     font-size: 0.9375em;
     margin-bottom: 2.5rem;
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 2.3em 0;
+    .h2 {
+      font-size: 2em;
+      margin-bottom: 1.5rem;
+    }
+    > .p {
+      font-size: 1.125em;
+      line-height: 1.7rem;
+      margin: auto;
+      margin-bottom: 3rem;
+      width: 530px;
+    }
   }
 }

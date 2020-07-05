@@ -8,6 +8,9 @@
   position: absolute;
   transform: translateX(-50%);
   width: 143px;
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+  }
 }
 
 .tabs {
@@ -21,6 +24,7 @@
       border-bottom: 1px solid var(--lightGray);
     }
     label {
+      color: var(--grayishBlue);
       display: block;
       padding: 1.2em 0;
     }
@@ -30,9 +34,6 @@
   }
   &__content {
     display: none;
-    .button {
-      display: none;
-    }
     &__image {
       padding-bottom: 4.5em;
       position: relative;
@@ -53,29 +54,99 @@
         max-width: 100%;
       }
     }
+    .button {
+      display: none;
+    }
   }
   input[id="bookmarking"]:checked {
-    ~ ul li:nth-child(1)::after {
-      display: block;
+    ~ ul li:nth-child(1) {
+      label {
+        color: var(--veryDarkBlue);
+      }
+      &::after {
+        display: block;
+      }
     }
     ~ .tabs__grid #tab__bookmarking {
       display: block;
     }
   }
   input[id="searching"]:checked {
-    ~ ul li:nth-child(2)::after {
-      display: block;
+    ~ ul li:nth-child(2) {
+      label {
+        color: var(--veryDarkBlue);
+      }
+      &::after {
+        display: block;
+      }
     }
     ~ .tabs__grid #tab__searching {
       display: block;
     }
   }
   input[id="sharing"]:checked {
-    ~ ul li:nth-child(3)::after {
-      display: block;
+    ~ ul li:nth-child(3) {
+      label {
+        color: var(--veryDarkBlue);
+      }
+      &::after {
+        display: block;
+      }
     }
     ~ .tabs__grid #tab__sharing {
       display: block;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    ul {
+      display: flex;
+      margin: auto;
+      width: 67%;
+      li {
+        border-bottom: 1px solid var(--lightGray);
+        border-top: none;
+        font-size: 1.0625em;
+        width: 100%;
+        label {
+          padding: 1.9rem 0;
+        }
+      }
+    }
+    &__content {
+      &__image {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        &::before {
+          background-position: bottom right;
+          background-size: 500px;
+          margin: 0;
+        }
+        img {
+          display: block;
+          margin-left: 10.875em;
+          max-height: 500px;
+          width: 537px;
+        }
+      }
+      &__info {
+        margin-left: auto;
+        padding: 4em 0;
+        text-align: left;
+        width: 40%;
+        > .p {
+          font-size: 1.125em;
+          line-height: 1.8rem;
+          margin: 0;
+          margin-bottom: 2rem;
+          width: 100%;
+        }
+      }
+      .button {
+        display: inline-block;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+      }
     }
   }
 }

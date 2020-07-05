@@ -4,7 +4,7 @@
   .cards {
     padding: 1em;
     .card {
-      border-radius: 10px;
+      border-radius: 15px;
       box-shadow: 0 10px 25px -20px var(--softBlue);
       margin: auto;
       margin-bottom: 3em;
@@ -19,6 +19,50 @@
       .button {
         margin-bottom: 1em;
         width: 100%;
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 14em 0 4.4em;
+    .h2 {
+      font-size: 2em;
+      margin-bottom: 1.3rem;
+    }
+    div > .p {
+      font-size: 1.1em;
+      line-height: 1.8rem;
+      margin: auto;
+      width: 50%;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      margin: 5em auto;
+      padding: 0;
+      .card {
+        height: fit-content;
+        margin: 0 1em;
+        overflow: hidden;
+        width: 250px;
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+        &:nth-child(2) {
+          margin-top: 3em;
+        }
+        &:nth-child(3) {
+          margin-top: 6em;
+        }
+        .p-2 {
+          font-size: 0.9375em;
+          margin-bottom: 1rem;
+          width: 90%;
+        }
+        .button {
+          font-size: 0.9em;
+          margin-bottom: 0.5em;
+          width: 92%;
+        }
       }
     }
   }

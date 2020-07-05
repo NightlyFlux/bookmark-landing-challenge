@@ -71,4 +71,48 @@
       }
     }
   }
+  @media screen and (min-width: 1024px) {
+    background: white;
+    display: block;
+    height: initial;
+    left: initial;
+    position: initial;
+    top: initial;
+    transition: initial;
+    .wrapper {
+      max-width: initial;
+      padding: 0;
+    }
+    ul {
+      display: flex;
+      li {
+        a {
+          color: var(--veryDarkBlue);
+          font-size: 0.8em;
+          font-weight: 400;
+          letter-spacing: 2px;
+          margin-left: 1.5em;
+        }
+        &:last-child {
+          a {
+            background-color: var(--softRed);
+            border: none;
+            box-shadow: 0 5px 10px -8px var(--softBlue);
+            color: white;
+            font-weight: 500;
+            margin-left: 2.5em;
+            margin-top: 0;
+            outline: none;
+            padding: 0.8rem 2.5em;
+          }
+        }
+      }
+    }
+    &__hamburger {
+      display: none;
+    }
+    &__social {
+      display: none;
+    }
+  }
 }

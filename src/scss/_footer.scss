@@ -26,4 +26,33 @@
       margin-right: 2.5em;
     }
   }
+  @media screen and (min-width: 1024px) {
+    height: 88px;
+    padding: 0;
+    &__content {
+      align-items: center;
+      flex-direction: row;
+      height: inherit;
+      justify-content: space-between;
+    }
+    &__links {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: left;
+      margin: 0;
+      margin-left: 2.8em;
+      margin-right: auto;
+      li {
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        margin-right: 1.5em;
+      }
+    }
+    &__social {
+      align-items: baseline;
+      a:first-child {
+        margin-right: 2.5em;
+      }
+    }
+  }
 }
