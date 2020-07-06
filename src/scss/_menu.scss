@@ -98,12 +98,18 @@
             background-color: var(--softRed);
             border: none;
             box-shadow: 0 5px 10px -8px var(--softBlue);
+            box-sizing: border-box;
             color: white;
             font-weight: 500;
             margin-left: 2.5em;
             margin-top: 0;
             outline: none;
             padding: 0.8rem 2.5em;
+            &:hover {
+              background-color: white;
+              border: 1px solid var(--softRed);
+              color: var(--softRed);
+            }
           }
         }
       }

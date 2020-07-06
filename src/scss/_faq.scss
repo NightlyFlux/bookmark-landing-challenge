@@ -118,6 +118,9 @@
             font-weight: 400;
             text-align: left;
             width: 100%;
+            &:hover {
+              color: var(--softRed);
+            }
           }
         }
       }

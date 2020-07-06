@@ -109,6 +109,9 @@
         width: 100%;
         label {
           padding: 1.9rem 0;
+          &:hover {
+            color: var(--softRed);
+          }
         }
       }
     }

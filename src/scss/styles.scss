@@ -26,6 +26,11 @@
 
 ul {
   list-style: none;
+  @media screen and (min-width: 1024px) {
+    li a:hover {
+      color: var(--softRed);
+    }
+  }
 }
 
 input {
@@ -35,8 +40,9 @@ input {
 .button {
   border: none;
   border-radius: 5px;
-  color: white;
+  box-sizing: border-box;
   box-shadow: 0 5px 10px -8px var(--softBlue);
+  color: white;
   font-weight: 500;
   outline: none;
   padding: 1rem 1.3rem;
@@ -103,4 +109,20 @@ input {
   @extend .p;
   font-size: 0.9em;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    &__blue:hover,
+    &__white:hover {
+      background-color: white;
+      border: 1px solid var(--softBlue);
+      color: var(--softBlue);
+    }
+    &__red:hover {
+      background-color: white;
+      border: 1px solid var(--softRed);
+      color: var(--softRed);
+    }
+  }
 }

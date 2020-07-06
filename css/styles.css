@@ -119,12 +119,19 @@
     border: none;
     -webkit-box-shadow: 0 5px 10px -8px var(--softBlue);
             box-shadow: 0 5px 10px -8px var(--softBlue);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     color: white;
     font-weight: 500;
     margin-left: 2.5em;
     margin-top: 0;
     outline: none;
     padding: 0.8rem 2.5em;
+  }
+  .menu ul li:last-child a:hover {
+    background-color: white;
+    border: 1px solid var(--softRed);
+    color: var(--softRed);
   }
   .menu__hamburger {
     display: none;
@@ -172,6 +179,7 @@
 @media screen and (min-width: 1024px) {
   .header {
     height: 138px;
+    position: relative;
   }
 }
 
@@ -350,6 +358,9 @@
   .tabs ul li label {
     padding: 1.9rem 0;
   }
+  .tabs ul li label:hover {
+    color: var(--softRed);
+  }
   .tabs__content__image {
     position: absolute;
     left: 0;
@@ -391,7 +402,7 @@
   text-align: center;
 }
 
-.features > .p, .features > .p-2 {
+.features .wrapper > .p, .features .wrapper > .p-2 {
   font-size: 0.9375em;
   margin-bottom: 2.5rem;
 }
@@ -404,7 +415,7 @@
     font-size: 2em;
     margin-bottom: 1.5rem;
   }
-  .features > .p, .features > .p-2 {
+  .features .wrapper > .p, .features .wrapper > .p-2 {
     font-size: 1.125em;
     line-height: 1.7rem;
     margin: auto;
@@ -635,6 +646,9 @@
     text-align: left;
     width: 100%;
   }
+  .faq .expanders .expander__header .p-2:hover {
+    color: var(--softRed);
+  }
   .faq button {
     font-size: 0.9em;
     padding: 1rem 1.5rem;
@@ -756,6 +770,17 @@
   .contact form input {
     width: 300px;
   }
+  .contact form input + div {
+    bottom: -10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    left: 0;
+    margin: 0;
+    padding: 1rem 0.7rem 0.6em;
+    position: absolute;
+    top: initial;
+    width: 300px;
+  }
   .contact form [type="submit"] {
     display: block;
     height: 47.22px;
@@ -789,7 +814,7 @@
   margin: 2em 0;
 }
 
-.footer__links li {
+.footer__links li a {
   color: white;
   display: block;
   font-size: 0.9em;
@@ -797,6 +822,7 @@
   padding: 1em;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .footer__social {
@@ -846,9 +872,11 @@
     margin-right: auto;
   }
   .footer__links li {
+    margin-right: 1.5em;
+  }
+  .footer__links li a {
     font-size: 0.8em;
     letter-spacing: 1px;
-    margin-right: 1.5em;
   }
   .footer__social {
     -webkit-box-align: baseline;
@@ -857,6 +885,10 @@
   }
   .footer__social a:first-child {
     margin-right: 2.5em;
+  }
+  .footer__social a img:hover {
+    -webkit-filter: brightness(0) saturate(100%) invert(45%) sepia(19%) saturate(5771%) hue-rotate(330deg) brightness(107%) contrast(97%);
+            filter: brightness(0) saturate(100%) invert(45%) sepia(19%) saturate(5771%) hue-rotate(330deg) brightness(107%) contrast(97%);
   }
 }
 
@@ -888,6 +920,12 @@ ul {
   list-style: none;
 }
 
+@media screen and (min-width: 1024px) {
+  ul li a:hover {
+    color: var(--softRed);
+  }
+}
+
 input {
   display: none;
 }
@@ -895,9 +933,11 @@ input {
 .button, .button__blue, .button__red, .button__white {
   border: none;
   border-radius: 5px;
-  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-shadow: 0 5px 10px -8px var(--softBlue);
           box-shadow: 0 5px 10px -8px var(--softBlue);
+  color: white;
   font-weight: 500;
   outline: none;
   padding: 1rem 1.3rem;
@@ -963,5 +1003,18 @@ input {
 .p-2 {
   font-size: 0.9em;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .button__blue:hover, .button__white:hover {
+    background-color: white;
+    border: 1px solid var(--softBlue);
+    color: var(--softBlue);
+  }
+  .button__red:hover {
+    background-color: white;
+    border: 1px solid var(--softRed);
+    color: var(--softRed);
+  }
 }
 /*# sourceMappingURL=styles.css.map */

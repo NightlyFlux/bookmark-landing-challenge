@@ -9,7 +9,7 @@
   }
   &__links {
     margin: 2em 0;
-    li {
+    li a {
       color: white;
       display: block;
       font-size: 0.9em;
@@ -17,6 +17,7 @@
       padding: 1em;
       text-align: center;
       text-transform: uppercase;
+      text-decoration: none;
     }
   }
   &__social {
@@ -43,15 +44,21 @@
       margin-left: 2.8em;
       margin-right: auto;
       li {
-        font-size: 0.8em;
-        letter-spacing: 1px;
         margin-right: 1.5em;
+        a {
+          font-size: 0.8em;
+          letter-spacing: 1px;
+        }
       }
     }
     &__social {
       align-items: baseline;
       a:first-child {
         margin-right: 2.5em;
+      }
+      a img:hover {
+        filter: brightness(0) saturate(100%) invert(45%) sepia(19%)
+          saturate(5771%) hue-rotate(330deg) brightness(107%) contrast(97%);
       }
     }
   }
