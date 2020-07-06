@@ -35,10 +35,10 @@
       ~ .header {
         background: rgba(37, 43, 70, 0.9);
         .header__logo {
-          background: url("/src/images/logo-bookmark-white.svg");
+          background: url("../images/logo-bookmark-white.svg");
         }
         .menu__hamburger {
-          background: url("/src/images/icon-close.svg") no-repeat;
+          background: url("../images/icon-close.svg") no-repeat;
         }
         .menu {
           display: block;
@@ -47,7 +47,7 @@
     }
   }
   &__hamburger {
-    background: url("/src/images/icon-hamburger.svg") no-repeat;
+    background: url("../images/icon-hamburger.svg") no-repeat;
     cursor: pointer;
     display: inline-flex;
     height: 18px;

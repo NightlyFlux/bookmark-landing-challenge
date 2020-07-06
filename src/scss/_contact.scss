@@ -36,8 +36,7 @@
         color: var(--lightGray);
       }
       &:invalid {
-        background: url("/src/images/icon-error.svg") center right 16px
-          no-repeat;
+        background: url("../images/icon-error.svg") center right 16px no-repeat;
         background-color: white;
         border: 2px solid var(--softRed);
         + div {

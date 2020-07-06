@@ -4,8 +4,7 @@
   #openE1:checked {
     ~ .expander {
       [for="openE1"] {
-        background: url("/src/images/icon-arrow-close.svg") right center
-          no-repeat;
+        background: url("../images/icon-arrow-close.svg") right center no-repeat;
         @media screen and (min-width: 1024px) {
           background-position: right 1.5em center;
         }
@@ -18,8 +17,7 @@
   #openE2:checked {
     ~ .expander {
       [for="openE2"] {
-        background: url("/src/images/icon-arrow-close.svg") right center
-          no-repeat;
+        background: url("../images/icon-arrow-close.svg") right center no-repeat;
         @media screen and (min-width: 1024px) {
           background-position: right 1.5em center;
         }
@@ -32,8 +30,7 @@
   #openE3:checked {
     ~ .expander {
       [for="openE3"] {
-        background: url("/src/images/icon-arrow-close.svg") right center
-          no-repeat;
+        background: url("../images/icon-arrow-close.svg") right center no-repeat;
         @media screen and (min-width: 1024px) {
           background-position: right 1.5em center;
         }
@@ -46,8 +43,7 @@
   #openE4:checked {
     ~ .expander {
       [for="openE4"] {
-        background: url("/src/images/icon-arrow-close.svg") right center
-          no-repeat;
+        background: url("../images/icon-arrow-close.svg") right center no-repeat;
         @media screen and (min-width: 1024px) {
           background-position: right 1.5em center;
         }
@@ -62,7 +58,7 @@
     .expander {
       border-bottom: 1px solid var(--lightGray);
       &__header {
-        background: url("/src/images/icon-arrow.svg") right center no-repeat;
+        background: url("../images/icon-arrow.svg") right center no-repeat;
         display: block;
         padding: 1em 0;
         transition: background 0.5s ease-in-out;

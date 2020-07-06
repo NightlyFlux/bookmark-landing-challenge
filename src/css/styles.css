@@ -37,11 +37,11 @@
 }
 
 .menu__toggler:checked ~ .header .header__logo {
-  background: url("/src/images/logo-bookmark-white.svg");
+  background: url("../images/logo-bookmark-white.svg");
 }
 
 .menu__toggler:checked ~ .header .menu__hamburger {
-  background: url("/src/images/icon-close.svg") no-repeat;
+  background: url("../images/icon-close.svg") no-repeat;
 }
 
 .menu__toggler:checked ~ .header .menu {
@@ -49,7 +49,7 @@
 }
 
 .menu__hamburger {
-  background: url("/src/images/icon-hamburger.svg") no-repeat;
+  background: url("../images/icon-hamburger.svg") no-repeat;
   cursor: pointer;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -154,7 +154,7 @@
 }
 
 .header__logo {
-  background: url("/src/images/logo-bookmark.svg");
+  background: url("../images/logo-bookmark.svg");
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -188,7 +188,7 @@
 }
 
 .hero__image {
-  background: url("/src/images/bg-desktop-mobile.png") bottom right no-repeat;
+  background: url("../images/bg-desktop-mobile.png") bottom right no-repeat;
   padding: 2.3em 0 2em;
   margin: 0 -2em;
 }
@@ -284,7 +284,7 @@
 }
 
 .tabs__content__image::before {
-  background: url("/src/images/bg-desktop-mobile.png") bottom 2.5em right no-repeat;
+  background: url("../images/bg-desktop-mobile.png") bottom 2.5em right no-repeat;
   content: "";
   left: 0;
   margin: 0 -2em;
@@ -515,7 +515,7 @@
 }
 
 .faq #openE1:checked ~ .expander [for="openE1"] {
-  background: url("/src/images/icon-arrow-close.svg") right center no-repeat;
+  background: url("../images/icon-arrow-close.svg") right center no-repeat;
 }
 
 @media screen and (min-width: 1024px) {
@@ -529,7 +529,7 @@
 }
 
 .faq #openE2:checked ~ .expander [for="openE2"] {
-  background: url("/src/images/icon-arrow-close.svg") right center no-repeat;
+  background: url("../images/icon-arrow-close.svg") right center no-repeat;
 }
 
 @media screen and (min-width: 1024px) {
@@ -543,7 +543,7 @@
 }
 
 .faq #openE3:checked ~ .expander [for="openE3"] {
-  background: url("/src/images/icon-arrow-close.svg") right center no-repeat;
+  background: url("../images/icon-arrow-close.svg") right center no-repeat;
 }
 
 @media screen and (min-width: 1024px) {
@@ -557,7 +557,7 @@
 }
 
 .faq #openE4:checked ~ .expander [for="openE4"] {
-  background: url("/src/images/icon-arrow-close.svg") right center no-repeat;
+  background: url("../images/icon-arrow-close.svg") right center no-repeat;
 }
 
 @media screen and (min-width: 1024px) {
@@ -579,7 +579,7 @@
 }
 
 .faq .expanders .expander__header {
-  background: url("/src/images/icon-arrow.svg") right center no-repeat;
+  background: url("../images/icon-arrow.svg") right center no-repeat;
   display: block;
   padding: 1em 0;
   -webkit-transition: background 0.5s ease-in-out;
@@ -716,7 +716,7 @@
 }
 
 .contact form input:invalid {
-  background: url("/src/images/icon-error.svg") center right 16px no-repeat;
+  background: url("../images/icon-error.svg") center right 16px no-repeat;
   background-color: white;
   border: 2px solid var(--softRed);
 }
